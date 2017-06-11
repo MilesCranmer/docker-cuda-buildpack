@@ -1,5 +1,9 @@
 FROM nvidia/cuda
 
+
+# Identical to https://github.com/docker-library/buildpack-deps/blob/master/xenial/Dockerfile
+# except for base image
+
 RUN set -ex; \
     apt-get update && apt-get install -y --no-install-recommends \
         ca-certificates \
